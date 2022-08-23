@@ -51,7 +51,7 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/initial%20method.ipynb)
 
-||||||
+||0|1|2|3|
 |:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
@@ -61,8 +61,8 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/1st%20method.ipynb)
 
-|||||||||||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+||0|1|2|3|4|5|6|7
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
@@ -72,8 +72,8 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/2nd%20method.ipynb)
 
-|||||||||||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+||0|1|2|3|4|5|6|7
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
@@ -83,8 +83,8 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/3rd%20method.ipynb)
 
-|||||||||||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+||0|1|2|3|4|5|6|7
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
@@ -94,8 +94,8 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/4th%20method.ipynb)
 
-|||||||||||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+||0|1|2|3|4|5|6|7
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
@@ -105,7 +105,7 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/5th%20method.ipynb)
 
-| | | | | |
+| | 0| 1| 2| 3|
 |:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
@@ -130,8 +130,8 @@ The resulting distribution changes with each run without a constant bias and ver
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/7th%20method.ipynb)
 
-||||||||||| 
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+||0|1|2|3|4|5|6|7
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
@@ -141,7 +141,7 @@ The resulting distribution changes with each run without a constant bias and ver
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/8th%20method.ipynb)
 
-| | | | | |
+| | 0| 1| 2| 3|
 |:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
