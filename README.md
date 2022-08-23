@@ -55,7 +55,9 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 Using **M** modes, it is possible to get **M** outputs simultaneously. On the other hand, one can generate the same output while using **<M** modes as iterations over a lower number of modes and append the result of each iteration to the output.
 
 This method helps speed up the simulation, as increasing the number of modes results in exponentially higher run times. This method can be helpful in photonic circuit setups as this method can generate a higher number of bits with fewer modes.
+
 ----
+
 ## Implementation list
 ### Initial encoding
 
