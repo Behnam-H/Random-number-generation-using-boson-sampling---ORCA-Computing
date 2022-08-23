@@ -1,13 +1,11 @@
 ## Team Information
 Team Name: Erwin's Box
-
 Team Members:
 - Shima Amirentezari Discord ID: shimaamirentezari#5121 [Github](https://github.com/QIShima) [Email](mailto:entezari.phy@gmail.com)
 
 - Javad Sohrabi Discord ID: javadsohrabi#9135 [Github](https://github.com/javadsohrabi) [Email](mailto:javat.sohrabi@gmail.com)
 
 - Behnam Haddadian Discord ID: To Be#8124 [Github](https://github.com/Behnam-H) [Email](mailto:behnam.h1@gmail.com)
-
 Pitch Presenter: Behnam Haddadian
 Challenge Name: [Random number generation using boson sampling](https://github.com/womanium-quantum/Random-number-generation-using-boson-sampling---ORCA-Computing)
 
@@ -23,20 +21,15 @@ After studying the publications mentioned above, we implemented the initially pr
 
 During the study, we implemented nine algorithms closely related to the initially proposed method with different setups and encoding. We checked the output performance and distribution to increase the algorithm's overall usability.
 
-The following methods have been implemented using **Jupyter Notebooks** that can be found under [Notebooks](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks). Each notebooks contains one implementation in ```qrng(1000,modes=NUMBER_OF_MODES,input_mode=CHOOSE_1_OF_5)``` method. This function takes three parameters (and one optional):
+The following methods have been implemented using **Jupyter Notebooks** that can be found under [Notebooks](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/tree/main/notebooks). Each notebooks contains one implementation in ```qrng(1000,modes=NUMBER_OF_MODES,input_mode=CHOOSE_1_OF_5)``` method. This function takes three parameters (and one optional):
 1. the First parameter is the required length of bits
 2. the Second parameter is the number of modes (Increasing this number results in higher run-times as it gets exponentially more CPU intensive)
 3. This parameter specifies photon input mode. Five modes are available:
-
-    - ```1```: First of modes 1s, second-half 0s. (```|1,1,...,1,0,...,0>```)
-
-    - ```2```: Same number of photons in the first mode. (```|15,0,...,0>```)
-
-    - ```3```: Dividing modes by 4, 3 photons for 1st quarter, two photons for the 2nd quarter, 1 photo for 3rd quarter, and 0 photons for the rest. (```|3,...,3,2,...2,1,...,1,0,...,0>```)
-
-    - ```4```: Sending two photons for the first half of modes and 0 for the rest. (```|2,2,...,2,0,...,0>```)
-
-    - ```5```: 1 photon for all modes. (```|1,1,...,1>```)
+-- ```1```: First of modes 1s, second-half 0s. (```|1,1,...,1,0,...,0>```)
+-- ```2```: Same number of photons in the first mode. (```|15,0,...,0>```)
+-- ```3```: Dividing modes by 4, 3 photons for 1st quarter, two photons for the 2nd quarter, 1 photo for 3rd quarter, and 0 photons for the rest. (```|3,...,3,2,...2,1,...,1,0,...,0>```)
+-- ```4```: Sending two photons for the first half of modes and 0 for the rest. (```|2,2,...,2,0,...,0>```)
+-- ```5```: 1 photon for all modes. (```|1,1,...,1>```)
 
 Implementation's output can be analyzed by the ```Evaluate()``` method, which takes the resulting distribution as a parameter and shows:
 
@@ -49,59 +42,72 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 4. Plot showing the value distribution (counts 1s and 0s) and compares that with a distribution of python generated random list.
 
 ### 1. Initial encoding
+
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/initial%20method.ipynb)
+
 ||||||
-|--|--|--|--|--|
+|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
 |Output|*|1|0|*
 
 ### 1st proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/1st%20method.ipynb)
-| | | | | | | | | |
-|--|--|--|--|--|--|--|--|--|
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/1st%20method.ipynb)
+
+|||||||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
 |Output|*|*|1|*|*|0|*|*
 
 ### 2nd proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/2nd%20method.ipynb)
-| | | | | | | | | |
-|--|--|--|--|--|--|--|--|--|
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/2nd%20method.ipynb)
+
+|||||||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
 |Output|*|1|*|*|*|*|0|*
 
 ### 3rd proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/3rd%20method.ipynb)
-| | | | | | | | | |
-|--|--|--|--|--|--|--|--|--|
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/3rd%20method.ipynb)
+
+|||||||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
-|Output|0|1|1|1|0|0
+|Output|0|1|1|1|0|0|1|0
 
 ### 4th proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/4th%20method.ipynb)
-| | | | | | | | | |
-|--|--|--|--|--|--|--|--|--|
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/4th%20method.ipynb)
+
+|||||||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
 |Output|1|1|1|0|0|0|0|1
 
 ### 5th proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/5th%20method.ipynb)
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/5th%20method.ipynb)
+
 | | | | | |
-|--|--|--|--|--|
+|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
 |Output|0|1|0|1
 
 ### 6th proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/6th%20method.ipynb)
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/6th%20method.ipynb)
 
 Using the initially implemented encoding, separating sample results based on the mode in which sampling occurs leads to interesting results.
 
@@ -115,18 +121,22 @@ C --> D
 The resulting distribution changes with each run without a constant bias and very high performance.
 
 ### 7th proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/7th%20method.ipynb)
-| | | | | | | | | |
-|--|--|--|--|--|--|--|--|--|
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/7th%20method.ipynb)
+
+||||||||||| 
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|0|0|1|1|1|1
 |S2|0|0|1|1|0|0|1|1
 |S3|0|1|0|1|0|1|0|1
 |Output|*|1|1|1|0|0|0|*
 
 ### 8th proposed encoding
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/8th%20method.ipynb)
+
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/8th%20method.ipynb)
+
 | | | | | |
-|--|--|--|--|--|
+|:--:|:--:|:--:|:--:|:--:|
 |S1|0|0|1|1
 |S2|0|1|0|1
 |Output|0|1|1|0
