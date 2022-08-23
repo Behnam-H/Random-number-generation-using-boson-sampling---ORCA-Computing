@@ -61,7 +61,7 @@ This method helps speed up the simulation, as increasing the number of modes res
 ## Implementation list
 ### Initial encoding
 
-[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/initial%20method.ipynb)
+[Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/notebooks/initial%20method.ipynb)
 
 ||0|1|2|3|
 |:--:|:--:|:--:|:--:|:--:|
