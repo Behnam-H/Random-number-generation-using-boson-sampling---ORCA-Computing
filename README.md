@@ -6,7 +6,9 @@ Team Members:
 - Javad Sohrabi Discord ID: javadsohrabi#9135 [Github](https://github.com/javadsohrabi) [Email](mailto:javat.sohrabi@gmail.com)
 
 - Behnam Haddadian Discord ID: To Be#8124 [Github](https://github.com/Behnam-H) [Email](mailto:behnam.h1@gmail.com)
+
 Pitch Presenter: Behnam Haddadian
+
 Challenge Name: [Random number generation using boson sampling](https://github.com/womanium-quantum/Random-number-generation-using-boson-sampling---ORCA-Computing)
 
 ## Material
