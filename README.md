@@ -24,6 +24,8 @@ Perceval's [Perfect Boson sampling](https://perceval.quandela.net/docs/notebooks
 
 After studying the publications mentioned above, we implemented the initially proposed algorithm. From there, we experimented with a range of different **post-processing** and **encoding** methods to highlight the effect of circuit setup while trying to achieve better performance.
 
+Studying the boson sampling process and random number generation, a method was proposed to study the effects of manipulating the initial algorithm's input state, which can lead to higher performance and lower the rate of loss, and as a result, improving the random number generation process. You can find more details about this algorithm [here](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/blob/main/Studying%20the%20effect%20of%20input%20states(QRNG).pdf).
+
 During the study, we implemented nine algorithms closely related to the initially proposed method with different setups and encoding. We checked the output performance and distribution to increase the algorithm's overall usability.
 
 The following methods have been implemented using **Jupyter Notebooks** that can be found under [Notebooks](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/tree/main/notebooks). Each notebooks contains one implementation in ```qrng(1000,modes=NUMBER_OF_MODES,input_mode=CHOOSE_1_OF_5)``` method. This function takes three parameters (and one optional):
@@ -160,6 +162,7 @@ The resulting distribution changes with each run without a constant bias and ver
 |Output|0|1|1|0
 
 > Simulations showed that this encoding's value distribution is biased towards 0.
+>
 > Increasing the number of modes reduces the bias.
 ----
 ## Possible usages
