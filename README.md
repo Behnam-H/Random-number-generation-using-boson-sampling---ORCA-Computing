@@ -149,7 +149,7 @@ The resulting distribution changes with each run without a constant bias and ver
 
 > Simulations showed that this encoding's value distribution is biased towards 0.
 > Increasing the number of modes reduces the bias.
-
+----
 ## Possible usages
 - Creating Encryption keys
 - Generating test cases during simulation to find points of failure
