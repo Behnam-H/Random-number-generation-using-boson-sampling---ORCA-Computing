@@ -1,6 +1,9 @@
 ## Team Information
+
 Team Name: Erwin's Box
+
 Team Members:
+
 - Shima Amirentezari Discord ID: shimaamirentezari#5121 [Github](https://github.com/QIShima) [Email](mailto:entezari.phy@gmail.com)
 
 - Javad Sohrabi Discord ID: javadsohrabi#9135 [Github](https://github.com/javadsohrabi) [Email](mailto:javat.sohrabi@gmail.com)
@@ -11,7 +14,7 @@ Pitch Presenter: Behnam Haddadian
 
 Challenge Name: [Random number generation using boson sampling](https://github.com/womanium-quantum/Random-number-generation-using-boson-sampling---ORCA-Computing)
 
-## Material
+## Resources
 
 Following algorithms have been implemented and proposed based on [An introduction to boson-sampling](https://arxiv.org/abs/1406.6767) and [An Unbiased Quantum Random Number Generator Based on Boson Sampling](https://arxiv.org/abs/2206.02292) publication.
 We have used [Perceval](https://perceval.quandela.net/docs/), a Python API, to simulate photonic circuits and the boson sampling process.
@@ -42,8 +45,9 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 3. Sample length (to measure algorithm requested vs. delivered number of bits)
 
 4. Plot showing the value distribution (counts 1s and 0s) and compares that with a distribution of python generated random list.
-
-### 1. Initial encoding
+----
+## Implementation list
+### Initial encoding
 
 [Notebook](https://github.com/Behnam-H/Random-number-generation-using-boson-sampling---ORCA-Computing/notebooks/initial%20method.ipynb)
 
