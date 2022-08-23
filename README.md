@@ -30,11 +30,17 @@ The following methods have been implemented using **Jupyter Notebooks** that can
 1. the First parameter is the required length of bits
 2. the Second parameter is the number of modes (Increasing this number results in higher run-times as it gets exponentially more CPU intensive)
 3. This parameter specifies photon input mode. Five modes are available:
--- ```1```: First of modes 1s, second-half 0s. (```|1,1,...,1,0,...,0>```)
--- ```2```: Same number of photons in the first mode. (```|15,0,...,0>```)
--- ```3```: Dividing modes by 4, 3 photons for 1st quarter, two photons for the 2nd quarter, 1 photo for 3rd quarter, and 0 photons for the rest. (```|3,...,3,2,...2,1,...,1,0,...,0>```)
--- ```4```: Sending two photons for the first half of modes and 0 for the rest. (```|2,2,...,2,0,...,0>```)
--- ```5```: 1 photon for all modes. (```|1,1,...,1>```)
+
+    - ```1```: First of modes 1s, second-half 0s. (```|1,1,...,1,0,...,0>```)
+
+    - ```2```: Same number of photons in the first mode. (```|15,0,...,0>```)
+
+    - ```3```: Dividing modes by 4, 3 photons for 1st quarter, two photons for the 2nd quarter, 1 photo for 3rd quarter, and 0 photons for the rest. (```|3,...,3,2,...2,1,...,1,0,...,0>```)
+
+
+    - ```4```: Sending two photons for the first half of modes and 0 for the rest. (```|2,2,...,2,0,...,0>```)
+
+    - ```5```: 1 photon for all modes. (```|1,1,...,1>```)
 
 Implementation's output can be analyzed by the ```Evaluate()``` method, which takes the resulting distribution as a parameter and shows:
 
