@@ -51,6 +51,10 @@ Implementation's output can be analyzed by the ```Evaluate()``` method, which ta
 3. Sample length (to measure algorithm requested vs. delivered number of bits)
 
 4. Plot showing the value distribution (counts 1s and 0s) and compares that with a distribution of python generated random list.
+
+Using **M** modes, it is possible to get **M** outputs simultaneously. On the other hand, one can generate the same output while using **<M** modes as iterations over a lower number of modes and append the result of each iteration to the output.
+
+This method helps speed up the simulation, as increasing the number of modes results in exponentially higher run times. This method can be helpful in photonic circuit setups as this method can generate a higher number of bits with fewer modes.
 ----
 ## Implementation list
 ### Initial encoding
@@ -168,8 +172,12 @@ The resulting distribution changes with each run without a constant bias and ver
 ## Conclusion
 
 Because of the chosen post-processing method proposed in [An Unbiased Quantum Random Number Generator Based on Boson Sampling](https://arxiv.org/abs/2206.02292) the simulation showed ~50% data loss, and experiments highlighted the impact of chosen setup, including **modes** and **circuit input state** which can have a significant effect on the output distribution.
+
 Based on the proposed method, the initial setup may generate evenly distributed values or biased random numbers. Also, different post-processing methods can impact the performance and the loss percentage.
+
 As observed in the simulations above, the chosen number of modes or a lousy encoding can lead to biased results. If the selected encoding method is not flawed, it impacts algorithm performance.
+
+It is worth mentioning that having an evenly distributed output may not necessarily be a sound output. This kind of distribution eliminates the possibility of getting many 1s or 0s in the output, which narrows down the output cases and may not be ideal.
 
 ## To do
 
